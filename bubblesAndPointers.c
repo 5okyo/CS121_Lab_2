@@ -28,7 +28,7 @@ int main(){
 
 
 void printValues(int* array) {
-	for (int i = 0; i < MAX - 1; i++;) {
+	for (int i = 0; i < MAX; i++) {
 		printf("%d ", *(array + i));
 	}	
 	printf("\n");
@@ -38,7 +38,7 @@ void printValues(int* array) {
 void sort(int* array) {
 	int i, j; 
 	for (i = 0; i < MAX - 1, i++;) {
-		for (j = 0; j < MAX - 1, j++) {
+		for (j = 0; j < MAX - 1; j++) {
 			if (*(array + j) > *(array + j + 1)) {
 				swap((array + j), (array + j + 1));
 				printValues(array);
@@ -52,5 +52,3 @@ void swap(int* x, int* y) {
 	*x = *y;
 	*y = temp; 	
 }	
-
-
