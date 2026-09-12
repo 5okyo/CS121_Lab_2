@@ -5,22 +5,22 @@ prototype of swap
 all functions accessible in main
 
 
+# Main
+
 main():
     make array of int (given) , int values[] = {random numbers not in order}
-    print the starting array to show the user the before
-    
+    print the starting array to show the user the before 
     swapping
     numbers put in x and y values to test if swapping works, specifically 3 and 5 
     print preswapped values
     swap, from the function created before main
     print postswapped values
-
     sort array
     print sorted array. showing the after result to user
 
 
 
-
+## Sort
 
 function sort (array):
     create integer variables i and j
@@ -30,6 +30,8 @@ function sort (array):
                 swap array[j] with array[j+1]
                 printArray(array) 
 
+## printValues
+
 function printValues (array):
     create integer variable i
     initalize i to 0
@@ -37,6 +39,8 @@ function printValues (array):
         printf(d (array + i))
     print ("\n")
         
+## Swap
+
 function swap (x y):
     create a temporary integer and set it to x
     overwrite x with y
