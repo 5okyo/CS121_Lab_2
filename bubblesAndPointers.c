@@ -24,16 +24,33 @@ int main(){
   printValues(values);
 
   return(0);
-
-
 }
 
 
 void printValues(int* array) {
-	
-
-
-	
-
+	for (int i = 0; i < MAX - 1; i++) {
+		printf("%d ", *(array + i));
+	}	
+	printf("\n")
 }	
+
+
+void sort(int* array) {
+	int i, j; 
+	for (i = 0; i < MAX - 1, i++) {
+		for (j = 0; j < MAX - 1, j++) {
+			if (*(array + j) > *(array + j + 1)) {
+				swap((array + j), (array + j + 1));
+				printValues(array);
+			}
+		}
+	}
+}
+
+void swap(int* x, int* y) {
+	int temp = *x;
+	*x = *y;
+	*y = temp; 	
+}	
+
 
